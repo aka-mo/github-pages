@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+.name {
+  text-align: center;
+}
+
+.name h2 {
+  font-size: 40px;
+  justify-content: center;
+  font-family: fantasy;
+}
+
+.name p {
+
+}
+nav {
+  margin: 20px 0;
+}
+ul {
+display: flex;
+list-style: none;
+justify-content: center;
+font-family: fantasy;
+}
+
+nav ul li:not(:first-child) {
+  margin-left: 10%;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+.name p:first-child {
+  font-size: 50px;
+  text-align: center;
+  font-family: fantasy;
+}
+
+.name p:last-child {
+  text-align: center;
+}
