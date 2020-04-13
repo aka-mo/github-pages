@@ -1,18 +1,30 @@
 * {
   box-sizing: border-box;
 }
-.name {
+.top_image {
   text-align: center;
+  position: relative;
+
 }
 
-.name h2 {
-  font-size: 40px;
-  justify-content: center;
+.aaa {
+position: absolute;
+top: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.top_image h2 {
+  top: 0;
+  font-size: 60px;
   font-family: fantasy;
 }
 
-.name p {
-
+.top_image p {
+  top: 50px;
+  font-family: fantasy;
 }
 nav {
   margin: 20px 0;
@@ -34,12 +46,5 @@ nav ul li:not(:first-child) {
 }
 
 
-.name p:first-child {
-  font-size: 50px;
-  text-align: center;
-  font-family: fantasy;
-}
 
-.name p:last-child {
-  text-align: center;
-}
+
