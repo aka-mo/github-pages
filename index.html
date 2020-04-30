@@ -3,45 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./stylesheet/_reset.css">
-  <link rel="stylesheet" href="./stylesheet/style.css">
-  <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
-  <title>Document</title>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./css/_reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>MOTOKI&nbsp;&nbsp;&nbsp;AKAHORI</title>
 </head>
 <body>
   <header>
     <div class="top_image">
-      <img src="./images/f_50_topimg.jpg" alt="">
-      <h1>MOTOKI AKAHORI</h2>
+      <h1>MOTOKI&nbsp;&nbsp;AKAHORI</h2>
       <p>portfolio</p>
     </div>
     <nav>
       <ul>
         <li><a href="#About">Profile</a></li>
-        <li><a href="#About">Works</a></li>
-        <li><a href="#About">Skill</a></li>
-        <li><a href="#About">Contact</a></li>
+        <li><a href="#Works">Works</a></li>
+        <li><a href="#Skill">Skill</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <div class="wrapper">
     <article>
       <section>
-        <h2 id="Profile"><i class="fas fa-user-alt fa-fw"></i>Profile</h2>
-        <p></p>
+        <h2 id="Profile"><i class="fas fa-user-alt fa-fw icon"></i>Profile</h2>
+        <div class="contents">
+          <div class="image_1">
+            <img src="https://pbs.twimg.com/profile_images/1249565215995248640/Dgs1FjNh_400x400.jpg" alt="">
+          </div>
+          <p class="plofile">はじめまして！赤堀元樹と申します。<br>前職製造業でのものづくりからデジタルでのものづくり、プログラミングへ興味を抱き退職後TECH::EXPERT(現TECH::CAMP)に入学。令和2年4月10日卒業後現在フリーランスとして活動しています。気軽にお声がけ下さい。</p>
+        </div>
       </section>
       <section>
-        <h2 id="Works"><i class="fas fa-paste fa-fw"></i>Works</h2>
-        <p>出来次第記載</p>
+        <h2 id="Works"><i class="fas fa-paste fa-fw icon"></i>Works</h2>
+        <div class="contents">
+          <div class="content">
+            <h3>ポートフォリオ</h3>
+            <div class="content__image">
+              <img src="./images/f_50_topimg.jpg" alt="">
+            </div>
+            <p>HTML/CSS/JavaScript/jQuery/Github</p>
+          </div>
+          <div class="content">
+            <p>FURIMA</p>
+          </div>
+          <div class="content">
+            <p>出来次第記載</p>
+          </div>
+        </div>
       </section>
       <section>
-        <h2 id="Skill">Skill</h2>
-        <p>HTML&CSS、Ruby、Rails、JavaScript、jQuery</p>
+        <h2 id="Skill"><i class="fas fa-swatchbook fa-fw icon"></i>Skill</h2>
+        <div class="contents">
+          <table>
+            <th>技術</th><th>スキル</th>
+            <tr>
+              <th>HTML,CSS</th><td>★★★☆☆</td>
+            </tr>
+            <tr>
+              <th>Ruby、Rails</th><td>★★★☆☆</td>
+            </tr>
+            <tr>
+              <th>JavaScript、jQuery</th><td>★★★☆☆</td>
+            </tr>
+          </table>
+        </div>
       </section>
       <section>
-        <h2 id="Contact">Contact</h2>
-        <p><i class="fab fa-twitter fa-fw"></i></p>
-        <span class="faa-parent animated-hover"><i class="far fa-hand-paper faa-wrench fa-lg"></i> 文字の上にカーソルをのせてね</span>
+        <h2 id="Contact"><i class="fas fa-handshake icon"></i>Contact</h2>
+        <div class="contents" id="block">
+          <p class="faa-parent animated-hover"><i class="fas fa-envelope fa-fw faa-wrench"></i><a href="mailto:info@example.com">akamotosan@gmail.com</a></p>
+          <p class="faa-parent animated-hover"><i class="fab fa-twitter fa-fw faa-wrench"></i><a href="https://twitter.com/akamo36364734">@akamo36364734</a></p>
+        </div>
+        
       </section>
     </article>
   </div>
