@@ -1,6 +1,4 @@
-@mixin top_font {
-  font-family: fantasy;
-}
+@mixin top_font {font-family: fantasy;}
 
 * {
   box-sizing: border-box;
@@ -31,11 +29,11 @@ body {
 nav {
   padding-top: 10px;
   background-color: #55a6e44c;
-ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  font-family: fantasy;
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-family: fantasy;
     a {
       font-size: 1.5em;
       text-decoration: none;
@@ -46,7 +44,7 @@ ul {
   }
 }
 .wrapper {
-  max-width: 70%;
+  max-width: 1280px;
   margin: 0 auto;
   background-color: #efefef;
   padding: 2em;
@@ -57,7 +55,7 @@ ul {
       h2 {
         display: inline;
         font-size: 3em;
-        border-bottom: 3px solid crimson;
+        border-bottom: 4px solid crimson;
         .icon {
           margin-right: 20px;
           font-size: 0.9em;
@@ -73,7 +71,7 @@ ul {
         align-items: center;
         background-color: #fff;
         .image_1 {
-          width: 70%;
+          width: 500px;
           height: auto;
         img {
           border-radius: 50%;
@@ -87,31 +85,83 @@ ul {
   
       }
       .content {
-        width: 33%;
-        border: 2px solid black;
+        width: 29%;
+        height: 50vh;
+        border-radius: 5%;
         overflow-wrap: break-word;
         h3 {
           text-align: center;
-          font-size: 1.3em;
           padding: 10px;
         }
         &__image {
           margin: 0 auto;
           width: 100%;
+          height: 60%;
+          display: flex;
+          position: relative;
           img {
             width: 100%;
           }
         }
-        p {
+        &__bottom {
           font-size: 0.8em;
           text-align: center;
           padding: 10px;
+          p {
+
+          }
+          a {
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px;
+          }
         }
       }
       .content:not(:first-child) {
-        margin-left: 1%;
+        margin-left: 3%;
       }
     }
+    #contents {
+      padding: 13px;
+      
+    }
+
+
+  #content_last{
+    
+  }
+
+  
+  .comingsoon {
+    // font: 50px/1.2 'Courgette', cursive;
+    font-family: cursive;
+    color: #fff;
+    z-index: 1;
+    font-size: 1.5em!important;
+    margin: 0 auto;
+    margin-top: 120px;
+  }
+  .circle-1 {
+    width: 200px;
+    height: 170px;
+    mix-blend-mode: multiply;
+    left: 21%;
+    margin-top: 60px;
+    position: absolute;
+  }
+  
+  /* Circles */
+  .circle-1 {
+    background: #f66;
+    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+    animation: border-animation 6s infinite linear;
+  }
+  
+  
+  /* Animation */
+  @keyframes border-animation {
+    to { transform: rotate(360deg); }
+  }
 
 
       table {
@@ -123,30 +173,30 @@ ul {
         }
       }
 
-        .fa-envelope {
-          color: crimson;
-          font-size: 1.5em;
-        }
-        .fa-twitter {
-          color: deepskyblue;
-          font-size: 1.5em;
-        }
-        .faa-parent a {
-          font-size: 1.5em;
-          padding-left: 0.3em;
-          text-decoration: none;
-        }
-        #block {
-          display: block;
-        }
+      .fa-envelope {
+        color: crimson;
+        font-size: 1.5em;
+      }
+      .fa-twitter {
+        color: deepskyblue;
+        font-size: 1.5em;
+      }
+      .faa-parent a {
+        font-size: 1.5em;
+        padding-left: 0.3em;
+        text-decoration: none;
+      }
+      #block {
+        display: block;
+      }
     }
   }
-}
-a:visited {
-  color: blue;
-}
-a:hover {
-  color: rgba(43, 76, 221, 0.671);
+  a:visited {
+    color: blue;
+  }
+  a:hover {
+    color: rgba(43, 76, 221, 0.671);
+  }
 }
 
 footer {
@@ -158,3 +208,58 @@ footer {
   height: 10vh;
   background-color: gray;
 }
+
+
+
+@media screen and (max-width: 1024px) { }
+@media screen and (max-width: 896px) { 
+  nav {
+    display: none;
+  }
+
+  .plofile {
+    font-size: 1em!important;
+  }
+
+  h2 {
+    font-size: 2em!important;
+  }
+
+  #contents {
+    display: block!important;
+    .content {
+      margin-top: 80px!important;
+      width: 80%;
+      margin: 0 auto;
+      border-radius: initial;
+      img {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .content:not(:last-child) {
+    border-bottom: 1px solid darkgray;
+  }
+  .circle-1 {
+    left: 26%;
+  }
+  #comingsoon {
+    display: flex;
+    justify-content: center;
+    align-items: center;  }
+
+  table {
+    font-size: 1.5em!important;
+  }
+
+  th {
+    padding-right: 50px!important;
+  }
+  
+  #block {
+    font-size: 0.8em!important;
+  }
+}
+@media screen and (max-width: 480px) { }
