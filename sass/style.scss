@@ -44,7 +44,7 @@ nav {
   }
 }
 .wrapper {
-  max-width: 1280px;
+  max-width: 960px;
   margin: 0 auto;
   background-color: #efefef;
   padding: 2em;
@@ -145,7 +145,7 @@ nav {
     width: 200px;
     height: 170px;
     mix-blend-mode: multiply;
-    left: 21%;
+    left: 10%;
     margin-top: 60px;
     position: absolute;
   }
@@ -211,7 +211,6 @@ footer {
 
 
 
-@media screen and (max-width: 1024px) { }
 @media screen and (max-width: 896px) { 
   nav {
     display: none;
@@ -229,7 +228,7 @@ footer {
     display: block!important;
     .content {
       margin-top: 80px!important;
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
       border-radius: initial;
       img {
@@ -243,7 +242,7 @@ footer {
     border-bottom: 1px solid darkgray;
   }
   .circle-1 {
-    left: 26%;
+    left: 33%!important;
   }
   #comingsoon {
     display: flex;
@@ -257,9 +256,38 @@ footer {
   th {
     padding-right: 50px!important;
   }
+
+  #skl {
+    padding-right: 0!important;
+  }
   
   #block {
     font-size: 0.8em!important;
   }
 }
-@media screen and (max-width: 480px) { }
+@media screen and (max-width: 480px) {
+  .content {
+    margin-top: 80px!important;
+    width: 100%!important;
+    margin: 0 auto;
+    border-radius: initial;
+    img {
+      width: 100%!important;
+      margin: 0 auto;
+    }
+  }
+
+  .circle-1 {
+    left: 10%!important;
+  }
+
+  table {
+    font-size: 0.8em!important;
+  }
+
+  th {
+    padding-right: 50px!important;
+  }
+
+
+ }
